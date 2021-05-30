@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		138D8FA52663BFB000F33ED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D8FA42663BFB000F33ED8 /* AppDelegate.swift */; };
 		138D8FA72663BFB000F33ED8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D8FA62663BFB000F33ED8 /* SceneDelegate.swift */; };
-		138D8FA92663BFB000F33ED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D8FA82663BFB000F33ED8 /* ViewController.swift */; };
+		138D8FA92663BFB000F33ED8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138D8FA82663BFB000F33ED8 /* MainViewController.swift */; };
 		138D8FAC2663BFB000F33ED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138D8FAA2663BFB000F33ED8 /* Main.storyboard */; };
 		138D8FAE2663BFB000F33ED8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138D8FAD2663BFB000F33ED8 /* Assets.xcassets */; };
 		138D8FB12663BFB000F33ED8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138D8FAF2663BFB000F33ED8 /* LaunchScreen.storyboard */; };
+		138D8FC02663CF0F00F33ED8 /* 12358-christmas-loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 138D8FBF2663CF0F00F33ED8 /* 12358-christmas-loading.json */; };
+		DB0277D9DF3D0D414EA1A6EE /* Pods_niceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E26DD51A96C8A3CF118E94 /* Pods_niceApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		138D8FA12663BFB000F33ED8 /* niceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138D8FA42663BFB000F33ED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138D8FA62663BFB000F33ED8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		138D8FA82663BFB000F33ED8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		138D8FA82663BFB000F33ED8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		138D8FAB2663BFB000F33ED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		138D8FAD2663BFB000F33ED8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		138D8FB02663BFB000F33ED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		138D8FB22663BFB000F33ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		138D8FBF2663CF0F00F33ED8 /* 12358-christmas-loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "12358-christmas-loading.json"; sourceTree = "<group>"; };
+		30E26DD51A96C8A3CF118E94 /* Pods_niceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_niceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467BC0A8923C760E2C253F74 /* Pods-niceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niceApp.release.xcconfig"; path = "Target Support Files/Pods-niceApp/Pods-niceApp.release.xcconfig"; sourceTree = "<group>"; };
+		6718F6378136466B4E8A3973 /* Pods-niceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-niceApp.debug.xcconfig"; path = "Target Support Files/Pods-niceApp/Pods-niceApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0277D9DF3D0D414EA1A6EE /* Pods_niceApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0551F92B6F92FABE9F3418A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30E26DD51A96C8A3CF118E94 /* Pods_niceApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		138D8F982663BFB000F33ED8 = {
 			isa = PBXGroup;
 			children = (
 				138D8FA32663BFB000F33ED8 /* niceApp */,
 				138D8FA22663BFB000F33ED8 /* Products */,
+				5C03EF6A1B83D1179744928A /* Pods */,
+				0551F92B6F92FABE9F3418A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,33 @@
 		138D8FA32663BFB000F33ED8 /* niceApp */ = {
 			isa = PBXGroup;
 			children = (
+				138D8FB92663BFE300F33ED8 /* ViewControllers */,
 				138D8FA42663BFB000F33ED8 /* AppDelegate.swift */,
 				138D8FA62663BFB000F33ED8 /* SceneDelegate.swift */,
-				138D8FA82663BFB000F33ED8 /* ViewController.swift */,
 				138D8FAA2663BFB000F33ED8 /* Main.storyboard */,
 				138D8FAD2663BFB000F33ED8 /* Assets.xcassets */,
 				138D8FAF2663BFB000F33ED8 /* LaunchScreen.storyboard */,
 				138D8FB22663BFB000F33ED8 /* Info.plist */,
 			);
 			path = niceApp;
+			sourceTree = "<group>";
+		};
+		138D8FB92663BFE300F33ED8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				138D8FBF2663CF0F00F33ED8 /* 12358-christmas-loading.json */,
+				138D8FA82663BFB000F33ED8 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5C03EF6A1B83D1179744928A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6718F6378136466B4E8A3973 /* Pods-niceApp.debug.xcconfig */,
+				467BC0A8923C760E2C253F74 /* Pods-niceApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 138D8FB52663BFB000F33ED8 /* Build configuration list for PBXNativeTarget "niceApp" */;
 			buildPhases = (
+				8EA6C02C053C226A5A7AF98D /* [CP] Check Pods Manifest.lock */,
 				138D8F9D2663BFB000F33ED8 /* Sources */,
 				138D8F9E2663BFB000F33ED8 /* Frameworks */,
 				138D8F9F2663BFB000F33ED8 /* Resources */,
+				AE680F6B488CE49CC7A19F4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				138D8FB12663BFB000F33ED8 /* LaunchScreen.storyboard in Resources */,
+				138D8FC02663CF0F00F33ED8 /* 12358-christmas-loading.json in Resources */,
 				138D8FAE2663BFB000F33ED8 /* Assets.xcassets in Resources */,
 				138D8FAC2663BFB000F33ED8 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +170,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8EA6C02C053C226A5A7AF98D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-niceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE680F6B488CE49CC7A19F4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-niceApp/Pods-niceApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-niceApp/Pods-niceApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-niceApp/Pods-niceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		138D8F9D2663BFB000F33ED8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				138D8FA92663BFB000F33ED8 /* ViewController.swift in Sources */,
+				138D8FA92663BFB000F33ED8 /* MainViewController.swift in Sources */,
 				138D8FA52663BFB000F33ED8 /* AppDelegate.swift in Sources */,
 				138D8FA72663BFB000F33ED8 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +363,7 @@
 		};
 		138D8FB62663BFB000F33ED8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6718F6378136466B4E8A3973 /* Pods-niceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +382,7 @@
 		};
 		138D8FB72663BFB000F33ED8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467BC0A8923C760E2C253F74 /* Pods-niceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
