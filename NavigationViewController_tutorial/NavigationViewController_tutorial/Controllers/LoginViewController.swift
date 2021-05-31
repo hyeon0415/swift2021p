@@ -8,7 +8,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    @IBOutlet weak var loginBtn: UIButton!
+    
    //뷰가 생성되었을때
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,12 @@ class LoginViewController: UIViewController {
        
         self.navigationController?.isNavigationBarHidden = true
         
+        loginBtn.addTarget(self, action: #selector(moveToMainViewController), for: .touchUpInside)
+        
+    }
+    //메인화면으로 이동
+    @objc fileprivate func moveToMainViewController(){
+        print("LoginViewController - moveToMainViewController() called")
     }
 
 
