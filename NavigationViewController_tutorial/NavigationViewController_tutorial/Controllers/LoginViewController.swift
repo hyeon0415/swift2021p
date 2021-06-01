@@ -25,6 +25,8 @@ class LoginViewController: UIViewController {
     //메인화면으로 이동
     @objc fileprivate func moveToMainViewController(){
         print("LoginViewController - moveToMainViewController() called")
+        let mainViewController = MainViewController()
+        self.navigationController?.pushViewController(mainViewController, animated: true)
     }
 
 
