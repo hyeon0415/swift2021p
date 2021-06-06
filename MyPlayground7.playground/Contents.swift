@@ -11,8 +11,9 @@ evenNumbers += [12, 14, 16]
 evenNumbers.append(contentsOf: [18, 20])
 
 
-//let isEmpty = evenNumbers.isEmpty
+//let isEmpty = evenNumbers.isEmpty   --- 중요!!
 
+//중요!!
 evenNumbers.count
 
 print(evenNumbers.first)
@@ -28,9 +29,50 @@ if let firstElement = evenNumbers.first{
 evenNumbers.min()
 evenNumbers.max()
 
-
+//중요!!!
 var numberOneItem = evenNumbers[0]
 var numberTwoItem = evenNumbers[1]
 var numberTenItem = evenNumbers[9]
 
+//rangea 이용해 가져오기
+let firstThree = evenNumbers[0...2]
+evenNumbers
 
+evenNumbers.contains(4)
+evenNumbers.contains(3)
+
+evenNumbers.insert(0, at: 0)
+evenNumbers
+
+//evenNumbers.removeAll()
+evenNumbers.remove(at: 0)
+evenNumbers
+
+evenNumbers[0...2] = [-2, 0, 2]
+evenNumbers
+
+
+//evenNumbers.swapAt(0, 9)
+
+//for num in evenNumbers{
+//    print(num)
+//}
+
+//중요!!!
+for (index, num) in evenNumbers.enumerated(){
+    print("idx: \(index), value: \(num)")
+}
+
+let firstThreeRemoved = evenNumbers.dropFirst(3)
+evenNumbers
+
+let lastRemoved = evenNumbers.dropLast()
+lastRemoved
+
+let firstThree = evenNumbers.prefix(3)
+firstThree
+
+let lastThree = evenNumbers.suffix(3)
+lastThree
+
+evenNumbers
