@@ -44,3 +44,44 @@ lec.remainSeats()
 
 Lecture.target
 Lecture.소속학원이름()
+
+
+struct Math {
+    static func abs(value: Int) -> Int{
+        if value > 0 {
+            return value
+        } else {
+            return -value
+        }
+    }
+}
+Math.abs(value: -20)
+
+// 제곱, 반값
+extension Math {
+    static func sqaure(value: Int) -> Int{
+         return value * value
+        }
+    static func half(value: Int) -> Int{
+         return value/2
+        
+    }
+}
+
+Math.sqaure(value: 5)
+Math.half(value: 20)
+
+let value: Int = 10
+// 제곱, 반값
+
+extension Int{
+    func square() -> Int {
+        return self * self
+    }
+    func half() -> Int {
+        return self/2
+    }
+}
+
+value.square()
+value.half()
