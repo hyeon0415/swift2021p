@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BountyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BountyViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout  {
     
     //MVVM
     
@@ -48,37 +48,44 @@ class BountyViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      
     }
-    
-   //UITableViewDateSource 몇개니, 어떻게 표현할꺼니
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        UICollectionViewDataSource,
+        // 몇개를 보여줄까요
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numOfBountyInfoList
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-               as? ListCell else {
-        return UITableViewCell()
-       }
-
+        // 셀은 어떻게 표현할까요
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridCell", for: indexPath) as? GridCell else{
+            return UICollectionViewCell()
+        }
         
-
-        let bountyInfo = viewModel.bountyInfo(at: indexPath.row)
+                let bountyInfo = viewModel.bountyInfo(at: indexPath.item)
+                cell.upadte(info: bountyInfo)
         cell.upadte(info: bountyInfo)
-
         return cell
-
     }
-    //UITableViewDelegate  when clicked
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("---> \(indexPath.row)")
-        performSegue(withIdentifier: "showDetail", sender: indexPath.row)
+        
+//        UICollectionViewDelegate,
+        // 셀이 클릭되었을때 어쩔까요
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+                print("---> \(indexPath.row)")
+                performSegue(withIdentifier: "showDetail", sender: indexPath.item)
     }
+        
+//        UICollectionViewDelegateFlowLayout
+        // 셀 사이즈를 계산할거다. (다양한 디바이스에서 일관적인 디자인을 보여주기 위해)
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let itemSpacing: CGFloat = 10
+        let textAreaHeight: CGFloat = 65
+        
+       
+        let width: CGFloat = (collectionView.bounds.width - itemSpacing)/2
+        let height: CGFloat = width * 10/7 + textAreaHeight
+        return CGSize(width: width, height: height)
+    }
 }
-
 
 class ListCell: UITableViewCell {
     @IBOutlet weak var imgView: UIImageView!
@@ -91,8 +98,6 @@ class ListCell: UITableViewCell {
         bountyLabel.text = "\(info.bounty)"
     }
 }
-
-
 
 class BountyViewModel {
     let bountyInfoList: [BountyInfo] = [
@@ -118,5 +123,17 @@ class BountyViewModel {
     
     func bountyInfo(at index: Int) -> BountyInfo{
         return sortedList[index]
+    }
+}
+
+class GridCell: UICollectionViewCell {
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var bountyLabel: UILabel!
+    
+    func upadte(info: BountyInfo){
+        imgView.image = info.image
+        nameLabel.text = info.name
+        bountyLabel.text = "\(info.bounty)"
     }
 }
