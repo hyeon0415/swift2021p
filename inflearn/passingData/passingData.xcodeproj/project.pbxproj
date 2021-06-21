@@ -15,6 +15,11 @@
 		13243B5826806D1F00DB35CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13243B5626806D1F00DB35CE /* LaunchScreen.storyboard */; };
 		13243B6226806D4100DB35CE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13243B6026806D4100DB35CE /* DetailViewController.swift */; };
 		13243B6326806D4100DB35CE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13243B6126806D4100DB35CE /* DetailViewController.xib */; };
+		13243B8C2680792800DB35CE /* SegueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13243B8B2680792800DB35CE /* SegueDetailViewController.swift */; };
+		13243B93268081F400DB35CE /* instanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13243B91268081F400DB35CE /* instanceDetailViewController.swift */; };
+		13243B94268081F400DB35CE /* instanceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13243B92268081F400DB35CE /* instanceDetailViewController.xib */; };
+		13243B9D26808C6600DB35CE /* delegateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13243B9B26808C6600DB35CE /* delegateDetailViewController.swift */; };
+		13243B9E26808C6600DB35CE /* delegateDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13243B9C26808C6600DB35CE /* delegateDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		13243B5926806D1F00DB35CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13243B6026806D4100DB35CE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		13243B6126806D4100DB35CE /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		13243B8B2680792800DB35CE /* SegueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueDetailViewController.swift; sourceTree = "<group>"; };
+		13243B91268081F400DB35CE /* instanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instanceDetailViewController.swift; sourceTree = "<group>"; };
+		13243B92268081F400DB35CE /* instanceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = instanceDetailViewController.xib; sourceTree = "<group>"; };
+		13243B9B26808C6600DB35CE /* delegateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegateDetailViewController.swift; sourceTree = "<group>"; };
+		13243B9C26808C6600DB35CE /* delegateDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = delegateDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,11 @@
 				13243B6026806D4100DB35CE /* DetailViewController.swift */,
 				13243B6126806D4100DB35CE /* DetailViewController.xib */,
 				13243B5426806D1F00DB35CE /* Assets.xcassets */,
+				13243B9B26808C6600DB35CE /* delegateDetailViewController.swift */,
+				13243B9C26808C6600DB35CE /* delegateDetailViewController.xib */,
+				13243B91268081F400DB35CE /* instanceDetailViewController.swift */,
+				13243B92268081F400DB35CE /* instanceDetailViewController.xib */,
+				13243B8B2680792800DB35CE /* SegueDetailViewController.swift */,
 				13243B5626806D1F00DB35CE /* LaunchScreen.storyboard */,
 				13243B5926806D1F00DB35CE /* Info.plist */,
 			);
@@ -130,6 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13243B9E26808C6600DB35CE /* delegateDetailViewController.xib in Resources */,
+				13243B94268081F400DB35CE /* instanceDetailViewController.xib in Resources */,
 				13243B5826806D1F00DB35CE /* LaunchScreen.storyboard in Resources */,
 				13243B5526806D1F00DB35CE /* Assets.xcassets in Resources */,
 				13243B5326806D1F00DB35CE /* Main.storyboard in Resources */,
@@ -144,9 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13243B9D26808C6600DB35CE /* delegateDetailViewController.swift in Sources */,
 				13243B5026806D1F00DB35CE /* ViewController.swift in Sources */,
 				13243B4C26806D1F00DB35CE /* AppDelegate.swift in Sources */,
+				13243B8C2680792800DB35CE /* SegueDetailViewController.swift in Sources */,
 				13243B4E26806D1F00DB35CE /* SceneDelegate.swift in Sources */,
+				13243B93268081F400DB35CE /* instanceDetailViewController.swift in Sources */,
 				13243B6226806D4100DB35CE /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
