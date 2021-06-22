@@ -6,6 +6,9 @@
 // 2. segue
 // 3. instance
 // 4. delegate (delegation) pattern 대리 위임
+// 5. closure
+// 6. Notificaton
+
 
 import UIKit
 
@@ -50,6 +53,14 @@ class ViewController: UIViewController {
         self.present(detailVC, animated: true, completion: nil)
     }
     
+    @IBAction func moveToClosure(_ sender: Any) {
+        let detailVC = ClosureDetailViewController(nibName: "ClosureDetailViewController", bundle: nil)
+       // 구현부
+        detailVC.myClosure = { str in
+            self.dataLabel.text = str
+        }
+        self.present(detailVC, animated: true, completion: nil)
+    }
 }
 
 // 위 셀프는 내가 만든 델리게이트 프로토콜도 준수한다를 아래와 같이 설명 

@@ -20,6 +20,8 @@
 		13243B94268081F400DB35CE /* instanceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13243B92268081F400DB35CE /* instanceDetailViewController.xib */; };
 		13243B9D26808C6600DB35CE /* delegateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13243B9B26808C6600DB35CE /* delegateDetailViewController.swift */; };
 		13243B9E26808C6600DB35CE /* delegateDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13243B9C26808C6600DB35CE /* delegateDetailViewController.xib */; };
+		13387F4E268174B400D73379 /* ClosureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13387F4C268174B400D73379 /* ClosureDetailViewController.swift */; };
+		13387F4F268174B400D73379 /* ClosureDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13387F4D268174B400D73379 /* ClosureDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		13243B92268081F400DB35CE /* instanceDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = instanceDetailViewController.xib; sourceTree = "<group>"; };
 		13243B9B26808C6600DB35CE /* delegateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delegateDetailViewController.swift; sourceTree = "<group>"; };
 		13243B9C26808C6600DB35CE /* delegateDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = delegateDetailViewController.xib; sourceTree = "<group>"; };
+		13387F4C268174B400D73379 /* ClosureDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureDetailViewController.swift; sourceTree = "<group>"; };
+		13387F4D268174B400D73379 /* ClosureDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClosureDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 				13243B6026806D4100DB35CE /* DetailViewController.swift */,
 				13243B6126806D4100DB35CE /* DetailViewController.xib */,
 				13243B5426806D1F00DB35CE /* Assets.xcassets */,
+				13387F4C268174B400D73379 /* ClosureDetailViewController.swift */,
+				13387F4D268174B400D73379 /* ClosureDetailViewController.xib */,
 				13243B9B26808C6600DB35CE /* delegateDetailViewController.swift */,
 				13243B9C26808C6600DB35CE /* delegateDetailViewController.xib */,
 				13243B91268081F400DB35CE /* instanceDetailViewController.swift */,
@@ -145,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13387F4F268174B400D73379 /* ClosureDetailViewController.xib in Resources */,
 				13243B9E26808C6600DB35CE /* delegateDetailViewController.xib in Resources */,
 				13243B94268081F400DB35CE /* instanceDetailViewController.xib in Resources */,
 				13243B5826806D1F00DB35CE /* LaunchScreen.storyboard in Resources */,
@@ -162,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13243B9D26808C6600DB35CE /* delegateDetailViewController.swift in Sources */,
+				13387F4E268174B400D73379 /* ClosureDetailViewController.swift in Sources */,
 				13243B5026806D1F00DB35CE /* ViewController.swift in Sources */,
 				13243B4C26806D1F00DB35CE /* AppDelegate.swift in Sources */,
 				13243B8C2680792800DB35CE /* SegueDetailViewController.swift in Sources */,
