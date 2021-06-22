@@ -17,7 +17,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let notificationName = Notification.Name("sendSomeString")
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showSomeString), name: notificationName, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow), name: UIResponder.keyboardDidShowNotification, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: notificationName, object: nil)
+        
     }
+    @objc func keyboardWillShow() {
+        print("will show")
+    }
+    @objc func keyboardDidShow() {
+        print("did show")
+    }
+    
+  @objc  func showSomeString(notification: Notification) {
+        if let str = notification.userInfo?["str"] as? String {
+            self.dataLabel.text = str
+        }
+        
+        
+    }
+    
     @IBOutlet weak var dataLabel: UILabel!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -61,6 +83,11 @@ class ViewController: UIViewController {
         }
         self.present(detailVC, animated: true, completion: nil)
     }
+    @IBAction func moveToNoti(_ sender: Any) {
+        let detailVC = NotiDetailViewController(nibName: "NotiDetailViewController", bundle: nil)
+        self.present(detailVC, animated: true, completion: nil)
+    }
+    
 }
 
 // 위 셀프는 내가 만든 델리게이트 프로토콜도 준수한다를 아래와 같이 설명 

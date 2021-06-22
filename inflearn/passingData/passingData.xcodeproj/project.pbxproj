@@ -22,6 +22,8 @@
 		13243B9E26808C6600DB35CE /* delegateDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13243B9C26808C6600DB35CE /* delegateDetailViewController.xib */; };
 		13387F4E268174B400D73379 /* ClosureDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13387F4C268174B400D73379 /* ClosureDetailViewController.swift */; };
 		13387F4F268174B400D73379 /* ClosureDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13387F4D268174B400D73379 /* ClosureDetailViewController.xib */; };
+		13387F5826817E8600D73379 /* NotiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13387F5626817E8600D73379 /* NotiDetailViewController.swift */; };
+		13387F5926817E8600D73379 /* NotiDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13387F5726817E8600D73379 /* NotiDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		13243B9C26808C6600DB35CE /* delegateDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = delegateDetailViewController.xib; sourceTree = "<group>"; };
 		13387F4C268174B400D73379 /* ClosureDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureDetailViewController.swift; sourceTree = "<group>"; };
 		13387F4D268174B400D73379 /* ClosureDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClosureDetailViewController.xib; sourceTree = "<group>"; };
+		13387F5626817E8600D73379 /* NotiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiDetailViewController.swift; sourceTree = "<group>"; };
+		13387F5726817E8600D73379 /* NotiDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotiDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				13243B92268081F400DB35CE /* instanceDetailViewController.xib */,
 				13243B8B2680792800DB35CE /* SegueDetailViewController.swift */,
 				13243B5626806D1F00DB35CE /* LaunchScreen.storyboard */,
+				13387F5626817E8600D73379 /* NotiDetailViewController.swift */,
+				13387F5726817E8600D73379 /* NotiDetailViewController.xib */,
 				13243B5926806D1F00DB35CE /* Info.plist */,
 			);
 			path = passingData;
@@ -152,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13387F4F268174B400D73379 /* ClosureDetailViewController.xib in Resources */,
+				13387F5926817E8600D73379 /* NotiDetailViewController.xib in Resources */,
 				13243B9E26808C6600DB35CE /* delegateDetailViewController.xib in Resources */,
 				13243B94268081F400DB35CE /* instanceDetailViewController.xib in Resources */,
 				13243B5826806D1F00DB35CE /* LaunchScreen.storyboard in Resources */,
@@ -173,6 +180,7 @@
 				13243B5026806D1F00DB35CE /* ViewController.swift in Sources */,
 				13243B4C26806D1F00DB35CE /* AppDelegate.swift in Sources */,
 				13243B8C2680792800DB35CE /* SegueDetailViewController.swift in Sources */,
+				13387F5826817E8600D73379 /* NotiDetailViewController.swift in Sources */,
 				13243B4E26806D1F00DB35CE /* SceneDelegate.swift in Sources */,
 				13243B93268081F400DB35CE /* instanceDetailViewController.swift in Sources */,
 				13243B6226806D4100DB35CE /* DetailViewController.swift in Sources */,
